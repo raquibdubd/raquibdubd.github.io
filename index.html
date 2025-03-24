@@ -1,6 +1,13 @@
-
 <head>
-  <title>Home Page</title>
+    <title>Get File Name from URL</title>
+    <script>
+        function getFileName() {
+            let path = window.location.pathname;
+            let fileName = path.substring(path.lastIndexOf('/') + 1);
+            document.getElementById('result').textContent = fileName;
+        }
+    </script>
+
   ...
   <link rel="shortcut icon" type="image/png" href="favicon.png?">
   </head>
@@ -10,6 +17,16 @@ my new home
   ---
 <a href="h1/file.html">anoomyFile</a>
 ho
+
+
+
+<body>
+    <h1>Get File Name Example</h1>
+    <button onclick="getFileName()">Get File Name</button>
+    <p>File Name: <span id="result"></span></p>
+</body>
+
+
 <br>
 https://www.youtube.com/watch?v=jT6J4c6tLIo 
 <iframe src="https://docs.google.com/document/d/11al91I7DAhhHTXDpdVdivi_ZRHQBBZs2shEZlY73RWI/edit?usp=sharing" height=100% width=100%"></iframe>
