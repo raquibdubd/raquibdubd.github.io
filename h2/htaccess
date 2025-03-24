@@ -1,0 +1,3 @@
+ErrorDocument 404 /404/404page.html
+Options -Indexes
+DirectoryIndex welcome.html index.html index-110mb.html index-clanteam.html index.html index.htm default.html
