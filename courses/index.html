@@ -11,6 +11,11 @@
 <script>
   
 var x = prompt("Please, type the <b>pass code<b> of your course:");
+// Handling user input
+		if (userInput == null) {
+			alert("You typed nothing!");
+		}
+  
 document.getElementById("demo").innerHTML =
 '<a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html">Go</a>';
 </script>
