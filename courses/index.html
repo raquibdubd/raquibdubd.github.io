@@ -4,9 +4,8 @@
 <body>
 <h1>Link genarated!</h1>
 
-<p>Please, click the link below</p>
 
-<p><b>Warning:</b> If you type the wrong pass code you will be directed to error page</p>
+
 	
 <p id="demo"></p>
 <p id="demo1"></p>
@@ -16,10 +15,10 @@ var x = prompt("Please, type the <b>pass code<b> of your course:");
 // Handling user input
 document.getElementById("demo1").innerHTML ='You typed= '+ x.toString();
 if (x === "") {
-	document.getElementById("demo").innerHTML ='No link';
+	document.getElementById("demo").innerHTML ='No link generated since you typed no pass code!';
 } else {
 document.getElementById("demo").innerHTML =
-'<a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Click here now!</h3></center></a>';		
+'<p>Please, click the link below</p><a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Click here now!</h3></center></a><br><p><b>Warning:</b> If you type the wrong pass code you will be directed to error page</p>';		
 	}
 
 	
