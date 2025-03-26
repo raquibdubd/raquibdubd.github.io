@@ -30,16 +30,15 @@ p.ex1 {
   
 var x = prompt("Please, type the pass code of your course:");
 // Handling user input
-document.getElementById("demo1").innerHTML ='You typed= '+ x.toString();
 if (x === "") {
 	document.getElementById("demo").innerHTML ='<br>No link generated since you typed no pass code!';
 } else {
 document.getElementById("demo").innerHTML =
-'Link genarated!<br>You typed: '+ x.toString()+'<nobr><a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Please, click here now!</h3></center></a></nobr><br><p><b>Warning:</b> If you type the wrong pass code you will be directed to error page</p>';		
+'<br><h3><center>Link genarated!</center></h3>You typed: '+ x.toString()+'<a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Please, click here now!</h3></center></a><p><b>Warning:</b> If you type the wrong pass code you will be directed to error page and turn back to this page again. In that case, please refresh this page to newly type the pass code.</p>';		
 	}
 
 	
 </script>
 
 </body>
-</html>html>
+</html>
