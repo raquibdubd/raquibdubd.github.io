@@ -9,17 +9,21 @@
 <p><b>Warning:</b> If you type the wrong pass code you will be directed to error page</p>
 	
 <p id="demo"></p>
-
+<p id="demo1"></p>
 <script>
   
 var x = prompt("Please, type the <b>pass code<b> of your course:");
 // Handling user input
+
 if (x == null) {
-	alert("You typed nothing! Please, refresh the page to type pass code");
+	document.getElementById("demo1").innerHTML ='No link';
 		}
-  
+	else {
 document.getElementById("demo").innerHTML =
-'<a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Click here now!</h3></center></a>';
+'<a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Click here now!</h3></center></a>';		
+	}
+
+	
 </script>
 
 </body>
