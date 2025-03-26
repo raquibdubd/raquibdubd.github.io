@@ -1,4 +1,5 @@
 <head>
+  <title>home</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png?">
 
     <style>
@@ -6,13 +7,27 @@ p.ex1 {
   margin-left: 20%;
 }
 </style>
-    
+  
+  
   </head>
 
-<body>
+<body onload="myFunction()">
    <p class="ex1"> Welcome to the Site! <br>
-    <a href="courses">courses</a>
+    <a href="/courses">courses</a>
+      <a href="/quotes/mathquotes.js">/quotes/mathquotes.js</a>
    </p> 
+  
+  
+  <p class="ex1" id="demo1" ></p>
+  
+
+ <script src="/quotes/mathquotes.js"></script>
+  
+  <script >
+  // var yy = window.myFunction();
+ document.getElementById("demo1").innerHTML = myFunction(); 
+</script>
+  
   
 </body>
 
