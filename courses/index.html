@@ -1,10 +1,23 @@
 
 <!DOCTYPE html>
-<html>
+<lang:html>
+	
+	<head>
+  <link rel="shortcut icon" type="image/png" href="favicon.png?">
+
+    <style>
+p.ex1 {
+  margin-left: 20%;
+}
+</style>
+    
+  </head>
+	
+	
 <body>
 	
-<p id="demo"></p>
-<p id="demo1"></p>
+<p id="demo" class="ex1"></p>
+<p id="demo1" class="ex1"></p>
 <script>
   
 var x = prompt("Please, type the <b>pass code<b> of your course:");
@@ -14,11 +27,11 @@ if (x === "") {
 	document.getElementById("demo").innerHTML ='No link generated since you typed no pass code!';
 } else {
 document.getElementById("demo").innerHTML =
-'Link genarated!<br><p>Please, click the link below</p><a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Click here now!</h3></center></a><br><p><b>Warning:</b> If you type the wrong pass code you will be directed to error page</p>';		
+'Link genarated!<br>You typed: '+ x.toString()+'<a href="https://raquibh.github.io/courses/okFile=' + x.toString()+'=BetaLand.html"><center><h3>Please, click here now!</h3></center></a><br><p><b>Warning:</b> If you type the wrong pass code you will be directed to error page</p>';		
 	}
 
 	
 </script>
 
 </body>
-</html>
+</lang=html>
