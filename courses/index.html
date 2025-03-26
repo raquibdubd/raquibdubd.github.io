@@ -9,9 +9,14 @@
 <p id="demo"></p>
 
 <script>
+
+let text = "Visit W3Schools!"; 
+let n = text.search("W3Schools");
+document.getElementById("demo").innerHTML = n;
+  
 var x = prompt("Please, type the pass code:");
 document.getElementById("demo").innerHTML =
-'<a href="https://raquibh.github.io/courses' + x.toString()+'">Go</a>';
+'<a href="https://raquibh.github.io/courses/' + x.toString()+'.html">Go</a>';
 </script>
 
 </body>
